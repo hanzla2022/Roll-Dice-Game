@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500&family=Oswald&display=swap");
+
+/********* HEADING FONTS ************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* FONTS */
+  --main-heading-font: "Oswald", sans-serif;
+  --sub-heading-font: "Barlow", sans-serif;
+  /* FONT SIZES */
+  --main-font-size: 3.5rem;
+  --sub-font-size: 2rem;
+}
+
+body {
+  background: rgb(37, 32, 32);
+  color-scheme: dark;
+}
+
+/* styling title */
+/* h1,
+h2 {
+  display: inline-block;
+} */
+
+/******************  PLAYER SECTION STYLING   **********************/
+
+.players {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: var(--main-font-size);
+  font-family: var(--main-heading-font);
+  text-align: center;
+  padding: 30px 0 60px;
+  color: yellow;
+}
+h2:nth-of-type(1) {
+  padding-right: 20px;
+}
+h2 {
+  font-size: var(--sub-font-size);
+  font-family: var(--sub-heading-font);
+  color: wheat;
+  text-align: start;
+}
+
+/********************  STYLING IAMGES SSECTION  **********************/
+.rolling_dices {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+img {
+  max-width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+
+/********************  STYLING BUTTONS SECTION  **********************/
+button {
+  padding: 10px 20px;
+  background: wheat;
+  color: black;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  /* display: block; */
+  margin-bottom: 10px;
+}
+.buttons {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/************************  RESET MODAL  **************************/
+
+.playButton {
+  background: darkred;
+  margin-top: 7px;
+  padding: inherit 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid antiquewhite;
+}
+
+.reset_modal {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  visibility: visible;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  opacity: 0.7;
+  background: transparent;
+  position: absolute;
+  top: 79%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease-in;
+}
+
+/* C:\Users\{H-K}\Desktop\dice roll game\index.html */
